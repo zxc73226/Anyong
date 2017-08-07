@@ -1,0 +1,419 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+* {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+body,
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+.bbox {
+  width: 100%;
+  height: 650px;
+  background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/slider.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; //background-position: center;
+  .nav {
+    //選單
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid rgba(20, 20, 20, .2);
+    .navbox {
+      width: 80%;
+      height: 100%;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: row;
+      padding: 0px 8px;
+      .nav-leftgrid {
+        widows: 60%;
+        height: 90px;
+        padding-top: 8px;
+      }
+      .nav-rightgrid {
+        widows: 40%;
+        height: 90px;
+        margin-left: auto;
+        li {
+          float: left;
+          display: inline;
+          margin: 0px 10px;
+          align: right;
+        }
+      }
+    }
+  }
+  .header {
+    .headerbox {
+      .header-leftgrid {
+        h1 {
+          font-size: 2.0rem;
+          color: green;
+        }
+      }
+      .header-rightgrid {}
+    }
+  }
+}
+
+.features {
+  //特色
+  width: 100%;
+  height: 520px;
+  .featuresbox {
+    width: 100%;
+    height: 520px;
+    .featurestext {
+      width: 100%;
+      height: 65px;
+      h1 {
+        text-align: center;
+      }
+      .line {
+        width: 60px;
+        border: 1px solid green;
+        margin: 0px auto;
+      }
+    }
+    .featuresblock {
+      width: 1000px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: row;
+      .grid {
+        width: 288px;
+        height: 333px;
+        margin: 0px auto;
+        .img {
+          width: 102px;
+          height: 102px;
+          border: 1px solid green;
+          border-radius: 50%;
+          margin: 0px auto;
+          margin-bottom: 20px;
+        }
+        h3 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.random {
+  //隨機填入
+  width: 100%;
+  height: 145px;
+  padding: 40px 0px;
+  box-sizing: border-box;
+  div {
+    width: 960px;
+    font-size: 1.5rem;
+    margin: 0px auto;
+    text-align: center;
+  }
+}
+
+.product {
+  //產品
+  width: 100%;
+  height: 100%;
+  .productbox {
+    width: 100%;
+    height: 100%;
+    .producttext {
+      width: 100%;
+      height: 65px;
+      h1 {
+        text-align: center;
+      }
+      .line {
+        width: 60px;
+        border: 1px solid green;
+        margin: 0px auto;
+      }
+    }
+    .productblock {
+      width: 100%;
+      height: 100%;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+      .gridbox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        .imggrid {
+          width: 395px;
+          height: 290px;
+          border: 1px solid white;
+          background-size: cover;
+        }
+        .imggrid1 {
+          background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0006_desktop-1149231_1280.png');
+        }
+        .imggrid2 {
+          background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0005_book-690340_1280.png');
+        }
+        .imggrid3 {
+          background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/paint-1772747_1280.jpg');
+        }
+        .imggrid4 {
+          background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0002_tablet-1250410_1280.png');
+        }
+        .imggrid5 {
+          background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0001_office-820390_1280.png');
+        }
+        .imggrid6 {
+          background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0000_macbook-336651_1280.png');
+        }
+      }
+    }
+  }
+}
+
+.service {
+  //服務項目
+  width: 100%;
+  height: 520px;
+  .servicebox {
+    width: 100%;
+    .servicetext {
+      width: 100%;
+      height: 65px;
+      h1 {
+        text-align: center;
+      }
+      .line {
+        width: 60px;
+        border: 1px solid green;
+        margin: 0px auto;
+      }
+    }
+  }
+  .serviceblock {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    .servicebox {
+      height: 110px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      .serbicegrid {
+        width: 490px;
+        height: 110px;
+        display: flex;
+        flex-direction: row;
+        .serbicegridimg {
+          width: 50px;
+          height: 50px;
+          border: 1px solid green;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.about_us {
+  //關於我們
+  width: 100%;
+  .about_usbox {
+    width: 100%;
+    .about_ustext {
+      width: 100%;
+      height: 65px;
+      h1 {
+        text-align: center;
+      }
+      .line {
+        width: 60px;
+        border: 1px solid green;
+        margin: 0px auto;
+      }
+    }
+    .about_usblock {
+      width: 70%;
+      height: 100%;
+      .about_usbox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        .about_usgrid {
+          width: 354px;
+          height: 333px;
+          margin: 0px auto;
+          .about_usgridtext {
+            width: 354px;
+            height: 228px;
+            padding: 32px;
+            box-sizing: border-box;
+          }
+          .about_usgridimg {
+            width: 70px;
+            height: 70px;
+            border: 1px solid green;
+            margin: 0px auto;
+            margin-top: -35px;
+          }
+          h4 {
+            text-align: center;
+          }
+          .post {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .cooperation {
+    width: 100%;
+    height: 160px;
+    padding-top: 24px;
+    box-sizing: border-box;
+    .cooperationbox {
+      width: 90%;
+      height: 100%;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: row;
+      .cooperationlogo {
+        width: 220px;
+        height: 72px;
+        background-size: cover;
+      }
+      .cooperationlogo1 {
+        background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/3.png');
+      }
+      .cooperationlogo2 {
+        background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/5.png');
+      }
+      .cooperationlogo3 {
+        background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/4.png');
+      }
+      .cooperationlogo4 {
+        background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/1.png');
+      }
+      .cooperationlogo5 {
+        background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/7.png');
+      }
+    }
+  }
+}
+
+.team {
+  //團隊介紹
+  width: 100%;
+  .teambox {
+    width: 100%;
+    .teamtext {
+      width: 100%;
+      height: 65px;
+      h1 {
+        text-align: center;
+      }
+      .line {
+        width: 60px;
+        border: 1px solid green;
+        margin: 0px auto;
+      }
+    }
+    .teamblock {
+      width: 70%;
+      width: 100%;
+      .teambox {
+        width: 100%;
+        height: 524px;
+        display: flex;
+        flex-direction: row;
+        margin: 0px auto;
+        .teamgrid {
+          width: 276px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          .teamimg {
+            width: 100%;
+            height: 50%;
+            background-size: cover;
+          }
+          .teamtext {
+            width: 100%;
+            height: 50%;
+          }
+          .teamimg1 {
+            background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0003_brazil-1368806_1280.png');
+          }
+          .teamimg2 {
+            background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0002_fashion-1623092_1280-1.png');
+          }
+          .teamimg3 {
+            background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0001_fashion-1623089_1280.png');
+          }
+          .teamimg4 {
+            background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0000_fashion-1623085_1280.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+.other {
+  width: 100%;
+  height: 1200px;
+  .otherbox {
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    .other-left {
+      width: 55%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .other-leftblock {
+        widows: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        .other-left-grid {
+          width: 50%;
+          height: 541px;
+        }
+      }
+    }
+    .other-right {
+      width: 45%;
+      height: 100%;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 1200px;
+  .footerbox {
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    .footergrid {}
+    .statement {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}
