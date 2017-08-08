@@ -31,7 +31,7 @@ html {
         height: 90px;
         padding-top: 8px; }
       .bbox .nav .navbox .nav-rightgrid {
-        widows: 40%;
+        margin-left: auto;
         height: 90px;
         margin-left: auto; }
         .bbox .nav .navbox .nav-rightgrid li {
@@ -297,11 +297,21 @@ html {
         border: 1px solid black; }
         .other .otherbox .other-left .other-leftblock .other-left-grid {
           width: 50%;
-          height: 541px; }
+          height: 541px;
+          border: 1px solid rgba(20, 20, 20, 0.2);
+          margin: 8px; }
           .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-img {
             width: 380px;
             height: 256px;
             background-size: cover; }
+          .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-text {
+            padding: 20px;
+            width: 380px;
+            height: 285px;
+            box-sizing: border-box; }
+            .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-text .line {
+              width: 60px;
+              border: 1px solid green; }
         .other .otherbox .other-left .other-leftblock .other-left-grid-img1 {
           background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2017/04/post-4.jpg"); }
         .other .otherbox .other-left .other-leftblock .other-left-grid-img2 {
@@ -311,6 +321,7 @@ html {
         .other .otherbox .other-left .other-leftblock .other-left-grid-img4 {
           background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2017/04/post-2.jpg"); }
     .other .otherbox .other-right {
+      width: 100%;
       height: 100%; }
 
 .footer {
