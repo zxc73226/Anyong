@@ -20,7 +20,7 @@ html {
     height: 90px;
     border-bottom: 1px solid rgba(20, 20, 20, 0.2); }
     .bbox .nav .navbox {
-      width: 80%;
+      width: 65%;
       height: 100%;
       margin: 0px auto;
       display: flex;
@@ -30,6 +30,10 @@ html {
         widows: 60%;
         height: 90px;
         padding-top: 8px; }
+        .bbox .nav .navbox .nav-leftgrid h1 {
+          font-size: 1.75rem;
+          font-weight: 500;
+          color: rgba(0, 100, 0, 0.8); }
       .bbox .nav .navbox .nav-rightgrid {
         margin-left: auto;
         height: 90px;
@@ -38,10 +42,13 @@ html {
           float: left;
           display: inline;
           margin: 0px 10px;
-          align: right; }
+          align: right;
+          padding: 35px 0px; }
+          .bbox .nav .navbox .nav-rightgrid li:hover {
+            border-bottom: 2px solid rgba(0, 100, 0, 0.8); }
   .bbox .header .headerbox .header-leftgrid h1 {
     font-size: 2.0rem;
-    color: green; }
+    color: rgba(0, 100, 0, 0.8); }
 
 .features {
   width: 100%;
@@ -56,7 +63,7 @@ html {
         text-align: center; }
       .features .featuresbox .featurestext .line {
         width: 60px;
-        border: 1px solid green;
+        border: 1px solid rgba(0, 100, 0, 0.8);
         margin: 0px auto; }
     .features .featuresbox .featuresblock {
       width: 1000px;
@@ -70,7 +77,7 @@ html {
         .features .featuresbox .featuresblock .grid .img {
           width: 102px;
           height: 102px;
-          border: 1px solid green;
+          border: 1px solid rgba(0, 100, 0, 0.8);
           border-radius: 50%;
           margin: 0px auto;
           margin-bottom: 20px; }
@@ -103,7 +110,7 @@ html {
         text-align: center; }
       .product .productbox .producttext .line {
         width: 60px;
-        border: 1px solid green;
+        border: 1px solid rgba(0, 100, 0, 0.8);
         margin: 0px auto; }
     .product .productbox .productblock {
       width: 100%;
@@ -146,7 +153,7 @@ html {
         text-align: center; }
       .service .servicebox .servicetext .line {
         width: 60px;
-        border: 1px solid green;
+        border: 1px solid rgba(0, 100, 0, 0.8);
         margin: 0px auto; }
   .service .serviceblock {
     width: 70%;
@@ -165,7 +172,7 @@ html {
         .service .serviceblock .servicebox .serbicegrid .serbicegridimg {
           width: 50px;
           height: 50px;
-          border: 1px solid green;
+          border: 1px solid rgba(0, 100, 0, 0.8);
           border-radius: 50%; }
 
 .about_us {
@@ -179,7 +186,7 @@ html {
         text-align: center; }
       .about_us .about_usbox .about_ustext .line {
         width: 60px;
-        border: 1px solid green;
+        border: 1px solid rgba(0, 100, 0, 0.8);
         margin: 0px auto; }
     .about_us .about_usbox .about_usblock {
       width: 70%;
@@ -201,7 +208,7 @@ html {
           .about_us .about_usbox .about_usblock .about_usbox .about_usgrid .about_usgridimg {
             width: 70px;
             height: 70px;
-            border: 1px solid green;
+            border: 1px solid rgba(0, 100, 0, 0.8);
             margin: 0px auto;
             margin-top: -35px; }
           .about_us .about_usbox .about_usblock .about_usbox .about_usgrid h4 {
@@ -245,7 +252,7 @@ html {
         text-align: center; }
       .team .teambox .teamtext .line {
         width: 60px;
-        border: 1px solid green;
+        border: 1px solid rgba(0, 100, 0, 0.8);
         margin: 0px auto; }
     .team .teambox .teamblock {
       width: 70%;
@@ -311,7 +318,7 @@ html {
             box-sizing: border-box; }
             .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-text .line {
               width: 60px;
-              border: 1px solid green; }
+              border: 1px solid rgba(0, 100, 0, 0.8); }
         .other .otherbox .other-left .other-leftblock .other-left-grid-img1 {
           background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2017/04/post-4.jpg"); }
         .other .otherbox .other-left .other-leftblock .other-left-grid-img2 {
