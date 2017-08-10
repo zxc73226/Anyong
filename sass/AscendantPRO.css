@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@keyframes img {
+  0% {
+    background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/slider.jpg"); }
+  50% {
+    background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/slide-01.jpg"); }
+  100% {
+    background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/slider.jpg"); } }
+@keyframes textgrid1 {
+  from {
+    opacity: 1;
+    visibility: visible; }
+  to {
+    opacity: 0;
+    visibility: hidden; } }
+@keyframes textgrid2 {
+  from {
+    opacity: 0;
+    visibility: hidden; }
+  to {
+    opacity: 1;
+    visibility: visible; } }
 * {
   margin: 0px;
   padding: 0px;
@@ -6,21 +27,26 @@
 
 body,
 html {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  background-image: url(http://demos.cpothemes.com/ascendant/wp-content/themes/ascendant/images/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 .bbox {
   width: 100%;
   height: 650px;
-  background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/slider.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  animation: img 20s infinite;
+  animation-timing-function: steps(1000);
+  background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/slider.jpg"); }
   .bbox .nav {
     width: 100%;
     height: 90px;
     border-bottom: 1px solid rgba(20, 20, 20, 0.2); }
     .bbox .nav .navbox {
-      width: 65%;
+      width: 75%;
       height: 100%;
       margin: 0px auto;
       display: flex;
@@ -31,9 +57,9 @@ html {
         height: 90px;
         padding-top: 8px; }
         .bbox .nav .navbox .nav-leftgrid h1 {
-          font-size: 1.75rem;
+          font-size: 1.65rem;
           font-weight: 500;
-          color: rgba(0, 100, 0, 0.8); }
+          color: #70b85d; }
       .bbox .nav .navbox .nav-rightgrid {
         margin-left: auto;
         height: 90px;
@@ -45,28 +71,85 @@ html {
           align: right;
           padding: 35px 0px; }
           .bbox .nav .navbox .nav-rightgrid li:hover {
-            border-bottom: 2px solid rgba(0, 100, 0, 0.8); }
-  .bbox .header .headerbox .header-leftgrid h1 {
-    font-size: 2.0rem;
-    color: rgba(0, 100, 0, 0.8); }
+            border-bottom: 2px solid #70b85d; }
+  .bbox .header .headerbox {
+    width: 75%;
+    margin: 0px auto; }
+    .bbox .header .headerbox .header-grid {
+      padding: 80px 0px; }
+      .bbox .header .headerbox .header-grid .textgrid {
+        width: 30vw; }
+        .bbox .header .headerbox .header-grid .textgrid h3 {
+          color: #70b85d;
+          font-size: .9rem;
+          font-weight: 400;
+          margin-bottom: 40px; }
+        .bbox .header .headerbox .header-grid .textgrid p {
+          font-weight: 900;
+          color: rgba(20, 20, 20, 0.85);
+          font-size: 2.0rem;
+          word-wrap: break-word;
+          margin-bottom: 40px;
+          min-width: 200px; }
+        .bbox .header .headerbox .header-grid .textgrid button {
+          box-sizing: border-box;
+          width: 200px;
+          padding: 16px;
+          height: 45px;
+          color: white;
+          background-color: #70b85d;
+          border: none;
+          border-radius: 4px;
+          -webkit-transition: opacity .3s;
+          transition: opacity .3s; }
+          .bbox .header .headerbox .header-grid .textgrid button:hover {
+            opacity: 0.6; }
+          .bbox .header .headerbox .header-grid .textgrid button:focus {
+            outline: none; }
+      .bbox .header .headerbox .header-grid .textgrid1 {
+        visibility: visible;
+        opacity: 1;
+        animation-duration: 9s;
+        animation-name: textgrid1;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; }
+      .bbox .header .headerbox .header-grid .textgrid2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        visibility: hidden;
+        opacity: 0;
+        margin: 0px auto;
+        text-align: center;
+        transition: all ease-out .3s;
+        animation-duration: 9s;
+        animation-name: textgrid2;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; }
 
 .features {
   width: 100%;
-  height: 520px; }
+  height: 100%;
+  background-color: white; }
   .features .featuresbox {
     width: 100%;
-    height: 520px; }
+    height: 100%; }
     .features .featuresbox .featurestext {
       width: 100%;
-      height: 65px; }
+      height: 65px;
+      padding: 50px 0px; }
       .features .featuresbox .featurestext h1 {
-        text-align: center; }
+        text-align: center;
+        font-size: 1.9rem;
+        margin-bottom: 20px;
+        font-weight: 700; }
       .features .featuresbox .featurestext .line {
         width: 60px;
-        border: 1px solid rgba(0, 100, 0, 0.8);
+        border: 1px solid #70b85d;
         margin: 0px auto; }
     .features .featuresbox .featuresblock {
-      width: 1000px;
+      width: 70%;
       margin: 0px auto;
       display: flex;
       flex-direction: row; }
@@ -77,69 +160,82 @@ html {
         .features .featuresbox .featuresblock .grid .img {
           width: 102px;
           height: 102px;
-          border: 1px solid rgba(0, 100, 0, 0.8);
+          border: 1px solid #70b85d;
           border-radius: 50%;
           margin: 0px auto;
-          margin-bottom: 20px; }
+          margin-bottom: 40px; }
         .features .featuresbox .featuresblock .grid h3 {
-          text-align: center; }
+          text-align: center;
+          font-size: 1.3rem;
+          margin-bottom: 28px; }
         .features .featuresbox .featuresblock .grid p {
-          text-align: center; }
+          text-align: center;
+          font-size: .9rem;
+          color: rgba(20, 20, 20, 0.7); }
 
 .random {
   width: 100%;
   height: 145px;
   padding: 40px 0px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: white;
+  background-color: #18253c; }
   .random div {
-    width: 960px;
+    width: 70vw;
     font-size: 1.5rem;
     margin: 0px auto;
     text-align: center; }
 
 .product {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-color: white; }
   .product .productbox {
-    width: 100%;
-    height: 100%; }
+    width: 70%;
+    height: 100%;
+    margin: 0px auto; }
     .product .productbox .producttext {
       width: 100%;
-      height: 65px; }
+      height: 65px;
+      padding: 50px 0px; }
       .product .productbox .producttext h1 {
-        text-align: center; }
+        text-align: center;
+        font-size: 1.9rem;
+        margin-bottom: 20px;
+        font-weight: 700; }
       .product .productbox .producttext .line {
         width: 60px;
-        border: 1px solid rgba(0, 100, 0, 0.8);
+        border: 1px solid #70b85d;
         margin: 0px auto; }
     .product .productbox .productblock {
-      width: 100%;
       height: 100%;
       margin: 0px auto;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      padding-bottom: 50px; }
       .product .productbox .productblock .gridbox {
-        width: 100%;
-        height: 100%;
         display: flex;
         flex-direction: row; }
         .product .productbox .productblock .gridbox .imggrid {
-          width: 395px;
+          width: 100%;
           height: 290px;
           border: 1px solid white;
           background-size: cover; }
-        .product .productbox .productblock .gridbox .imggrid1 {
-          background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0006_desktop-1149231_1280.png"); }
-        .product .productbox .productblock .gridbox .imggrid2 {
-          background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0005_book-690340_1280.png"); }
-        .product .productbox .productblock .gridbox .imggrid3 {
-          background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/paint-1772747_1280.jpg"); }
-        .product .productbox .productblock .gridbox .imggrid4 {
-          background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0002_tablet-1250410_1280.png"); }
-        .product .productbox .productblock .gridbox .imggrid5 {
-          background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0001_office-820390_1280.png"); }
-        .product .productbox .productblock .gridbox .imggrid6 {
-          background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0000_macbook-336651_1280.png"); }
+          .product .productbox .productblock .gridbox .imggrid:hover {
+            background-color: green;
+            z-index: 9999; }
+      .product .productbox .productblock .imggrid1 {
+        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0006_desktop-1149231_1280.png"); }
+      .product .productbox .productblock .imggrid2 {
+        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0005_book-690340_1280.png"); }
+      .product .productbox .productblock .imggrid3 {
+        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/paint-1772747_1280.jpg"); }
+      .product .productbox .productblock .imggrid4 {
+        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0002_tablet-1250410_1280.png"); }
+      .product .productbox .productblock .imggrid5 {
+        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0001_office-820390_1280.png"); }
+      .product .productbox .productblock .imggrid6 {
+        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0000_macbook-336651_1280.png"); }
 
 .service {
   width: 100%;
@@ -148,32 +244,37 @@ html {
     width: 100%; }
     .service .servicebox .servicetext {
       width: 100%;
-      height: 65px; }
+      height: 65px;
+      margin: 50px 0px; }
       .service .servicebox .servicetext h1 {
-        text-align: center; }
+        text-align: center;
+        font-size: 1.9rem;
+        margin-bottom: 20px;
+        font-weight: 700; }
       .service .servicebox .servicetext .line {
         width: 60px;
-        border: 1px solid rgba(0, 100, 0, 0.8);
+        border: 1px solid #70b85d;
         margin: 0px auto; }
-  .service .serviceblock {
-    width: 70%;
+
+.serviceblock {
+  width: 70%;
+  display: flex;
+  flex-direction: column; }
+  .serviceblock .servicebox {
+    height: 110px;
+    width: 100%;
     display: flex;
-    flex-direction: column; }
-    .service .serviceblock .servicebox {
+    flex-direction: row; }
+    .serviceblock .servicebox .serbicegrid {
+      width: 490px;
       height: 110px;
-      width: 100%;
       display: flex;
       flex-direction: row; }
-      .service .serviceblock .servicebox .serbicegrid {
-        width: 490px;
-        height: 110px;
-        display: flex;
-        flex-direction: row; }
-        .service .serviceblock .servicebox .serbicegrid .serbicegridimg {
-          width: 50px;
-          height: 50px;
-          border: 1px solid rgba(0, 100, 0, 0.8);
-          border-radius: 50%; }
+      .serviceblock .servicebox .serbicegrid .serbicegridimg {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #70b85d;
+        border-radius: 50%; }
 
 .about_us {
   width: 100%; }
@@ -181,65 +282,70 @@ html {
     width: 100%; }
     .about_us .about_usbox .about_ustext {
       width: 100%;
-      height: 65px; }
+      height: 65px;
+      margin: 50px 0px; }
       .about_us .about_usbox .about_ustext h1 {
-        text-align: center; }
+        text-align: center;
+        font-size: 1.9rem;
+        margin-bottom: 20px;
+        font-weight: 700; }
       .about_us .about_usbox .about_ustext .line {
         width: 60px;
-        border: 1px solid rgba(0, 100, 0, 0.8);
+        border: 1px solid #70b85d;
         margin: 0px auto; }
-    .about_us .about_usbox .about_usblock {
-      width: 70%;
-      height: 100%; }
-      .about_us .about_usbox .about_usblock .about_usbox {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row; }
-        .about_us .about_usbox .about_usblock .about_usbox .about_usgrid {
-          width: 354px;
-          height: 333px;
-          margin: 0px auto; }
-          .about_us .about_usbox .about_usblock .about_usbox .about_usgrid .about_usgridtext {
-            width: 354px;
-            height: 228px;
-            padding: 32px;
-            box-sizing: border-box; }
-          .about_us .about_usbox .about_usblock .about_usbox .about_usgrid .about_usgridimg {
-            width: 70px;
-            height: 70px;
-            border: 1px solid rgba(0, 100, 0, 0.8);
-            margin: 0px auto;
-            margin-top: -35px; }
-          .about_us .about_usbox .about_usblock .about_usbox .about_usgrid h4 {
-            text-align: center; }
-          .about_us .about_usbox .about_usblock .about_usbox .about_usgrid .post {
-            text-align: center; }
-  .about_us .cooperation {
-    width: 100%;
-    height: 160px;
-    padding-top: 24px;
-    box-sizing: border-box; }
-    .about_us .cooperation .cooperationbox {
-      width: 90%;
+  .about_us .about_usblock {
+    width: 70%;
+    height: 100%; }
+    .about_us .about_usblock .about_usbox {
+      width: 100%;
       height: 100%;
-      margin: 0px auto;
       display: flex;
       flex-direction: row; }
-      .about_us .cooperation .cooperationbox .cooperationlogo {
-        width: 220px;
-        height: 72px;
-        background-size: cover; }
-      .about_us .cooperation .cooperationbox .cooperationlogo1 {
-        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/3.png"); }
-      .about_us .cooperation .cooperationbox .cooperationlogo2 {
-        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/5.png"); }
-      .about_us .cooperation .cooperationbox .cooperationlogo3 {
-        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/4.png"); }
-      .about_us .cooperation .cooperationbox .cooperationlogo4 {
-        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/1.png"); }
-      .about_us .cooperation .cooperationbox .cooperationlogo5 {
-        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/7.png"); }
+      .about_us .about_usblock .about_usbox .about_usgrid {
+        width: 354px;
+        height: 333px;
+        margin: 0px auto; }
+        .about_us .about_usblock .about_usbox .about_usgrid .about_usgridtext {
+          width: 354px;
+          height: 228px;
+          padding: 32px;
+          box-sizing: border-box; }
+        .about_us .about_usblock .about_usbox .about_usgrid .about_usgridimg {
+          width: 70px;
+          height: 70px;
+          border: 1px solid #70b85d;
+          margin: 0px auto;
+          margin-top: -35px; }
+        .about_us .about_usblock .about_usbox .about_usgrid h4 {
+          text-align: center; }
+        .about_us .about_usblock .about_usbox .about_usgrid .post {
+          text-align: center; }
+
+.cooperation {
+  width: 100%;
+  height: 160px;
+  padding-top: 24px;
+  box-sizing: border-box; }
+  .cooperation .cooperationbox {
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row; }
+    .cooperation .cooperationbox .cooperationlogo {
+      width: 220px;
+      height: 72px;
+      background-size: cover; }
+    .cooperation .cooperationbox .cooperationlogo1 {
+      background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/3.png"); }
+    .cooperation .cooperationbox .cooperationlogo2 {
+      background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/5.png"); }
+    .cooperation .cooperationbox .cooperationlogo3 {
+      background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/4.png"); }
+    .cooperation .cooperationbox .cooperationlogo4 {
+      background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/1.png"); }
+    .cooperation .cooperationbox .cooperationlogo5 {
+      background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/7.png"); }
 
 .team {
   width: 100%; }
@@ -247,42 +353,46 @@ html {
     width: 100%; }
     .team .teambox .teamtext {
       width: 100%;
-      height: 65px; }
+      height: 65px;
+      margin: 50px 0px; }
       .team .teambox .teamtext h1 {
-        text-align: center; }
+        text-align: center;
+        font-size: 1.9rem;
+        margin-bottom: 20px;
+        font-weight: 700; }
       .team .teambox .teamtext .line {
         width: 60px;
-        border: 1px solid rgba(0, 100, 0, 0.8);
+        border: 1px solid #70b85d;
         margin: 0px auto; }
-    .team .teambox .teamblock {
-      width: 70%;
-      width: 100%; }
-      .team .teambox .teamblock .teambox {
-        width: 100%;
-        height: 524px;
+  .team .teamblock {
+    width: 70%;
+    width: 100%; }
+    .team .teamblock .teambox {
+      width: 100%;
+      height: 524px;
+      display: flex;
+      flex-direction: row;
+      margin: 0px auto; }
+      .team .teamblock .teambox .teamgrid {
+        width: 276px;
+        height: 100%;
         display: flex;
-        flex-direction: row;
-        margin: 0px auto; }
-        .team .teambox .teamblock .teambox .teamgrid {
-          width: 276px;
-          height: 100%;
-          display: flex;
-          flex-direction: column; }
-          .team .teambox .teamblock .teambox .teamgrid .teamimg {
-            width: 100%;
-            height: 50%;
-            background-size: cover; }
-          .team .teambox .teamblock .teambox .teamgrid .teamtext {
-            width: 100%;
-            height: 50%; }
-          .team .teambox .teamblock .teambox .teamgrid .teamimg1 {
-            background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0003_brazil-1368806_1280.png"); }
-          .team .teambox .teamblock .teambox .teamgrid .teamimg2 {
-            background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0002_fashion-1623092_1280-1.png"); }
-          .team .teambox .teamblock .teambox .teamgrid .teamimg3 {
-            background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0001_fashion-1623089_1280.png"); }
-          .team .teambox .teamblock .teambox .teamgrid .teamimg4 {
-            background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0000_fashion-1623085_1280.png"); }
+        flex-direction: column; }
+        .team .teamblock .teambox .teamgrid .teamimg {
+          width: 100%;
+          height: 50%;
+          background-size: cover; }
+        .team .teamblock .teambox .teamgrid .teamtext {
+          width: 100%;
+          height: 50%; }
+        .team .teamblock .teambox .teamgrid .teamimg1 {
+          background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0003_brazil-1368806_1280.png"); }
+        .team .teamblock .teambox .teamgrid .teamimg2 {
+          background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0002_fashion-1623092_1280-1.png"); }
+        .team .teamblock .teambox .teamgrid .teamimg3 {
+          background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0001_fashion-1623089_1280.png"); }
+        .team .teamblock .teambox .teamgrid .teamimg4 {
+          background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0000_fashion-1623085_1280.png"); }
 
 .other {
   width: 100%;
@@ -318,7 +428,7 @@ html {
             box-sizing: border-box; }
             .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-text .line {
               width: 60px;
-              border: 1px solid rgba(0, 100, 0, 0.8); }
+              border: 1px solid #70b85d; }
         .other .otherbox .other-left .other-leftblock .other-left-grid-img1 {
           background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2017/04/post-4.jpg"); }
         .other .otherbox .other-left .other-leftblock .other-left-grid-img2 {
