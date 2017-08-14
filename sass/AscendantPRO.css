@@ -71,62 +71,66 @@ html {
           align: right;
           padding: 35px 0px; }
           .bbox .nav .navbox .nav-rightgrid li:hover {
-            border-bottom: 2px solid #70b85d; }
-  .bbox .header .headerbox {
-    width: 75%;
-    margin: 0px auto; }
-    .bbox .header .headerbox .header-grid {
-      padding: 80px 0px; }
-      .bbox .header .headerbox .header-grid .textgrid {
-        width: 30vw; }
-        .bbox .header .headerbox .header-grid .textgrid h3 {
-          color: #70b85d;
-          font-size: .9rem;
-          font-weight: 400;
-          margin-bottom: 40px; }
-        .bbox .header .headerbox .header-grid .textgrid p {
-          font-weight: 900;
-          color: rgba(20, 20, 20, 0.85);
-          font-size: 2.0rem;
-          word-wrap: break-word;
-          margin-bottom: 40px;
-          min-width: 200px; }
-        .bbox .header .headerbox .header-grid .textgrid button {
-          box-sizing: border-box;
-          width: 200px;
-          padding: 16px;
-          height: 45px;
-          color: white;
-          background-color: #70b85d;
-          border: none;
-          border-radius: 4px;
-          -webkit-transition: opacity .3s;
-          transition: opacity .3s; }
-          .bbox .header .headerbox .header-grid .textgrid button:hover {
-            opacity: 0.6; }
-          .bbox .header .headerbox .header-grid .textgrid button:focus {
-            outline: none; }
-      .bbox .header .headerbox .header-grid .textgrid1 {
-        visibility: visible;
-        opacity: 1;
-        animation-duration: 9s;
-        animation-name: textgrid1;
-        animation-iteration-count: infinite;
-        animation-direction: alternate; }
-      .bbox .header .headerbox .header-grid .textgrid2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        visibility: hidden;
-        opacity: 0;
-        margin: 0px auto;
-        text-align: center;
-        transition: all ease-out .3s;
-        animation-duration: 9s;
-        animation-name: textgrid2;
-        animation-iteration-count: infinite;
-        animation-direction: alternate; }
+            border-bottom: 2px solid #70b85d;
+            cursor: pointer; }
+  .bbox .header {
+    width: 100%; }
+    .bbox .header .headerbox {
+      width: 75%;
+      margin: 0px auto; }
+      .bbox .header .headerbox .header-grid {
+        padding: 80px 0px; }
+        .bbox .header .headerbox .header-grid .textgrid {
+          width: 30vw; }
+          .bbox .header .headerbox .header-grid .textgrid h3 {
+            color: #70b85d;
+            font-size: .9rem;
+            font-weight: 400;
+            margin-bottom: 40px; }
+          .bbox .header .headerbox .header-grid .textgrid p {
+            font-weight: 900;
+            color: rgba(20, 20, 20, 0.85);
+            font-size: 2.0rem;
+            word-wrap: break-word;
+            margin-bottom: 40px;
+            min-width: 200px; }
+          .bbox .header .headerbox .header-grid .textgrid button {
+            box-sizing: border-box;
+            width: 200px;
+            padding: 16px;
+            height: 45px;
+            color: white;
+            background-color: #70b85d;
+            border: none;
+            border-radius: 4px;
+            -webkit-transition: opacity .3s;
+            transition: opacity .3s; }
+            .bbox .header .headerbox .header-grid .textgrid button:hover {
+              opacity: 0.6;
+              cursor: pointer; }
+            .bbox .header .headerbox .header-grid .textgrid button:focus {
+              outline: none; }
+        .bbox .header .headerbox .header-grid .textgrid1 {
+          visibility: visible;
+          opacity: 1;
+          animation-duration: 9s;
+          animation-name: textgrid1;
+          animation-iteration-count: infinite;
+          animation-direction: alternate; }
+        .bbox .header .headerbox .header-grid .textgrid2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          visibility: hidden;
+          opacity: 0;
+          margin: 0px auto;
+          text-align: center;
+          transition: all ease-out .3s;
+          animation-duration: 9s;
+          animation-name: textgrid2;
+          animation-iteration-count: infinite;
+          animation-direction: alternate; }
 
 .features {
   width: 100%;
@@ -222,7 +226,8 @@ html {
           border: 1px solid white;
           background-size: cover; }
           .product .productbox .productblock .gridbox .imggrid:hover {
-            opacity: .7; }
+            opacity: .7;
+            cursor: pointer; }
       .product .productbox .productblock .imggrid1 {
         background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0006_desktop-1149231_1280.png"); }
       .product .productbox .productblock .imggrid2 {
@@ -239,9 +244,11 @@ html {
 .service {
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 20px; }
   .service .servicebox {
     width: 70%;
+    height: 100%;
     margin: 0px auto; }
     .service .servicebox .servicetext {
       width: 100%;
@@ -269,20 +276,17 @@ html {
       margin-bottom: 56px; }
       .service .serviceblock .servicebox .serbicegrid {
         width: 560px;
-        height: 100%;
         display: flex;
         flex-direction: row;
         margin: 0px auto; }
         .service .serviceblock .servicebox .serbicegrid .serbicegridimgbox {
-          width: 55px;
-          height: 100%; }
+          width: 55px; }
           .service .serviceblock .servicebox .serbicegrid .serbicegridimgbox .serbicegridimg {
             width: 50px;
             height: 50px;
             border: 1px solid #70b85d;
             border-radius: 50%; }
         .service .serviceblock .servicebox .serbicegrid .serbicegridtext {
-          height: 110px;
           margin-left: 20px; }
           .service .serviceblock .servicebox .serbicegrid .serbicegridtext a {
             font-size: 1.5rem; }
@@ -323,10 +327,10 @@ html {
       margin-bottom: 40px; }
       .about_us .about_usblock .about_usbox .about_usgrid {
         width: 354px;
-        height: 333px;
+        height: 100%;
         margin: 0px 28px; }
         .about_us .about_usblock .about_usbox .about_usgrid .about_usgridtext {
-          width: 354px;
+          width: 100%;
           padding: 32px;
           box-sizing: border-box;
           background-color: rgba(20, 20, 20, 0.035);
@@ -352,33 +356,34 @@ html {
 
 .cooperation {
   width: 100%;
-  height: 160px;
-  padding-top: 24px;
+  height: 100%;
+  padding: 24px 0;
   box-sizing: border-box;
   border: 1px solid rgba(20, 20, 20, 0.2); }
   .cooperation .cooperationbox {
-    width: 80%;
+    margin: 0 auto;
+    width: 70%;
     height: 100%;
-    margin: 0px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
     box-sizing: border-box; }
-    .cooperation .cooperationbox .cooperationlogo {
-      width: 220px;
-      height: 72px;
-      background-size: cover; }
-    .cooperation .cooperationbox .cooperationlogo1 {
-      background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/3.png"); }
-    .cooperation .cooperationbox .cooperationlogo2 {
-      background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/5.png"); }
-    .cooperation .cooperationbox .cooperationlogo3 {
-      background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/4.png"); }
-    .cooperation .cooperationbox .cooperationlogo4 {
-      background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/1.png"); }
-    .cooperation .cooperationbox .cooperationlogo5 {
-      background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/7.png"); }
+    .cooperation .cooperationbox .cooperationgrid {
+      display: flex;
+      flex-direction: row; }
+      .cooperation .cooperationbox .cooperationgrid .cooperationlogo {
+        width: 20%;
+        height: 72px;
+        background-size: cover; }
+      .cooperation .cooperationbox .cooperationgrid .cooperationlogo1 {
+        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/3.png"); }
+      .cooperation .cooperationbox .cooperationgrid .cooperationlogo2 {
+        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/5.png"); }
+      .cooperation .cooperationbox .cooperationgrid .cooperationlogo3 {
+        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/4.png"); }
+      .cooperation .cooperationbox .cooperationgrid .cooperationlogo4 {
+        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/1.png"); }
+      .cooperation .cooperationbox .cooperationgrid .cooperationlogo5 {
+        background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/7.png"); }
 
 .team {
   width: 100%;
@@ -407,13 +412,13 @@ html {
       display: flex;
       flex-direction: row;
       margin: 0px auto;
-      justify-content: space-between;
       padding-bottom: 40px; }
       .team .teamblock .teambox .teamgrid {
         widows: 100%;
         height: 100%;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        margin: 0px auto; }
         .team .teamblock .teambox .teamgrid .teamimg {
           width: 250px;
           height: 60%;
@@ -426,6 +431,18 @@ html {
           background-color: white;
           box-sizing: border-box;
           padding: 24px; }
+          .team .teamblock .teambox .teamgrid .teamtext h3 {
+            font-size: .95rem;
+            margin: 4px 0px; }
+          .team .teamblock .teambox .teamgrid .teamtext .title {
+            margin-bottom: 20px;
+            font-size: .75rem;
+            color: #70b85d; }
+          .team .teamblock .teambox .teamgrid .teamtext p {
+            font-size: .85rem;
+            color: rgba(20, 20, 20, 0.6);
+            line-height: 2.0rem;
+            font-weight: 500; }
         .team .teamblock .teambox .teamgrid .teamimg1 {
           background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0003_brazil-1368806_1280.png"); }
         .team .teamblock .teambox .teamgrid .teamimg2 {
@@ -435,40 +452,47 @@ html {
         .team .teamblock .teambox .teamgrid .teamimg4 {
           background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0000_fashion-1623085_1280.png"); }
 
+.teamleftgrid,
+.teamrightgrid {
+  display: flex;
+  margin: 0px auto;
+  width: 50%; }
+
 .other {
   width: 100%;
   height: 100%;
   background-color: white;
   padding: 20px 0 80px 0; }
   .other .otherbox {
-    width: 70%;
-    height: 100%;
-    margin: 0px auto;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: row; }
     .other .otherbox .other-left {
+      width: 70%;
       height: 100%;
       display: flex;
       flex-direction: column; }
       .other .otherbox .other-left .other-leftblock {
-        widows: 100%;
         height: 50%;
         display: flex;
         flex-direction: row; }
         .other .otherbox .other-left .other-leftblock .other-left-grid {
           width: 50%;
-          height: 541px;
+          height: 100%;
           border: 1px solid rgba(20, 20, 20, 0.2);
           margin: 16px; }
           .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-img {
-            width: 380px;
+            width: 100%;
             height: 256px;
             background-size: cover; }
           .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-text {
+            min-height: 345px;
             padding: 20px;
-            width: 380px;
-            height: 285px;
-            box-sizing: border-box; }
+            width: 100%;
+            height: 50%;
+            box-sizing: border-box;
+            vertical-align: bottom; }
             .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-text h3 {
               font-size: 1.2rem; }
             .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-text .line {
@@ -478,13 +502,15 @@ html {
             .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-text p {
               font-size: .8rem;
               line-height: 2em;
-              margin-bottom: 20px;
               color: rgba(20, 20, 20, 0.7); }
             .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-text button {
               box-sizing: border-box;
+              position: absolute;
+              bottom: 30px;
               width: 180px;
               padding: 16px;
               height: 45px;
+              margin-top: 20px;
               color: white;
               background-color: #70b85d;
               border: none;
@@ -492,7 +518,8 @@ html {
               -webkit-transition: opacity .3s;
               transition: opacity .3s; }
               .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-text button:hover {
-                opacity: 0.6; }
+                opacity: 0.6;
+                cursor: pointer; }
               .other .otherbox .other-left .other-leftblock .other-left-grid .other-left-grid-text button:focus {
                 outline: none; }
         .other .otherbox .other-left .other-leftblock .other-left-grid-img1 {
@@ -504,9 +531,10 @@ html {
         .other .otherbox .other-left .other-leftblock .other-left-grid-img4 {
           background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2017/04/post-2.jpg"); }
     .other .otherbox .other-right {
-      width: 288px;
+      width: 30%;
       height: 100%; }
       .other .otherbox .other-right .other-right-text-grid {
+        width: 288px;
         border: 1px solid rgba(20, 20, 20, 0.4);
         margin: 20px 0px;
         padding: 4px 8px;
@@ -518,14 +546,16 @@ html {
           .other .otherbox .other-right .other-right-text-grid .ortgt:focus {
             outline: none; }
         .other .otherbox .other-right .other-right-text-grid .fa {
-          margin: 4px; }
+          margin: 4px;
+          cursor: pointer; }
       .other .otherbox .other-right .other-right-api-grid {
         padding: 20px 0px; }
         .other .otherbox .other-right .other-right-api-grid h3 {
           margin-bottom: 20px; }
         .other .otherbox .other-right .other-right-api-grid .apibox .fa {
           font-size: 2rem;
-          margin: 0px 8px; }
+          margin: 0px 8px;
+          cursor: pointer; }
       .other .otherbox .other-right .other-right-icon-grid h3 {
         margin-bottom: 20px; }
       .other .otherbox .other-right .other-right-icon-grid .iconbox {
@@ -533,25 +563,138 @@ html {
         flex-direction: row;
         margin-bottom: 20px; }
         .other .otherbox .other-right .other-right-icon-grid .iconbox .iconimgbox {
-          width: 20%;
           height: 100%; }
           .other .otherbox .other-right .other-right-icon-grid .iconbox .iconimgbox .iconimg {
             width: 50px;
             height: 50px;
+            margin-right: 12px;
             background-size: cover;
             background-position: center center;
             background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2017/04/post-4.jpg"); }
         .other .otherbox .other-right .other-right-icon-grid .iconbox .icontext {
           width: 60%; }
+          .other .otherbox .other-right .other-right-icon-grid .iconbox .icontext h4 {
+            font-size: .8rem;
+            color: #70b85d;
+            font-weight: 400;
+            margin-bottom: 8px; }
+          .other .otherbox .other-right .other-right-icon-grid .iconbox .icontext p {
+            color: rgba(20, 20, 20, 0.6);
+            font-size: .8rem; }
 
 .footer {
   width: 100%;
-  height: 1200px; }
+  height: 100%;
+  background-color: #18253c;
+  padding: 40px 0px 12px 0px; }
   .footer .footerbox {
     width: 80%;
     height: 100%;
-    margin: 0px auto; }
-    .footer .footerbox .statement h2 {
-      text-align: center; }
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .footer .footerbox .fg2 {
+      margin: 0px 16px; }
+    .footer .footerbox .footergrid {
+      width: 354px; }
+      .footer .footerbox .footergrid h1 {
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: 400; }
+      .footer .footerbox .footergrid h2 {
+        color: white;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        font-weight: 400; }
+      .footer .footerbox .footergrid h3 {
+        font-size: .8rem;
+        color: #70b85d;
+        font-weight: 400;
+        cursor: pointer; }
+      .footer .footerbox .footergrid p {
+        font-size: .8rem;
+        color: white;
+        line-height: 2rem;
+        margin-bottom: 20px; }
+      .footer .footerbox .footergrid .fgbox {
+        width: 250px;
+        height: 250px;
+        border: 1px solid white;
+        margin-bottom: 20px; }
+    .footer .footerbox .fgi {
+      width: 60%; }
+      .footer .footerbox .fgi h4 {
+        width: 100px;
+        font-size: .9rem;
+        color: #70b85d;
+        font-weight: 400; }
+      .footer .footerbox .fgi p {
+        color: white;
+        font-size: .8rem; }
+  .footer .statement {
+    border-top: 1px solid white;
+    height: 48px;
+    text-align: center;
+    padding: 20px 0px;
+    box-sizing: border-box; }
+    .footer .statement h2 {
+      font-size: .9rem;
+      font-weight: 400;
+      color: white; }
+
+@media screen and (max-width: 1280px) {
+  .features .featuresbox .featuresblock {
+    width: 100%; }
+
+  .product .productbox {
+    width: 100%; }
+
+  .service .serviceblock {
+    width: 95%; }
+
+  .about_us .about_usblock {
+    width: 100%; }
+
+  .team .teamblock .teambox {
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    height: 100%; }
+    .team .teamblock .teambox .teamgrid {
+      width: 300px;
+      height: 525px; }
+      .team .teamblock .teambox .teamgrid .teamimg {
+        width: 300px;
+        height: 60%; }
+      .team .teamblock .teambox .teamgrid .teamtext {
+        width: 300px;
+        height: 40%; }
+
+  .teamleftgrid,
+  .teamrightgrid {
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 28px; }
+
+  .other .otherbox {
+    width: 75%;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box; }
+    .other .otherbox .other-left {
+      width: 100%; }
+      .other .otherbox .other-left .other-leftblock {
+        height: 100%; }
+        .other .otherbox .other-left .other-leftblock .other-left-grid {
+          margin: 0px; }
+    .other .otherbox .other-right {
+      width: 100%; }
+      .other .otherbox .other-right .other-right-text-grid {
+        box-sizing: border-box;
+        width: 100%; }
+        .other .otherbox .other-right .other-right-text-grid .ortgt {
+          width: 100%; } }
 
 /*# sourceMappingURL=AscendantPRO.css.map */

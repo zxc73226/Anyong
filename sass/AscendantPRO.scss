@@ -92,12 +92,14 @@ html {
           padding: 35px 0px;
           &:hover {
             border-bottom: 2px solid $green;
+            cursor: pointer;
           }
         }
       }
     }
   }
   .header {
+    width: 100%;
     .headerbox {
       width: 75%;
       margin: 0px auto;
@@ -130,6 +132,7 @@ html {
             border-radius: 4px;
             &:hover {
               opacity: 0.6;
+              cursor: pointer;
             }
             -webkit-transition: opacity .3s;
             transition: opacity .3s;
@@ -279,6 +282,7 @@ html {
           background-size: cover;
           &:hover {
             opacity: .7;
+            cursor: pointer;
           }
         }
       }
@@ -309,8 +313,10 @@ html {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, .8);
+  padding-bottom: 20px;
   .servicebox {
     width: 70%;
+    height: 100%;
     margin: 0px auto;
     .servicetext {
       width: 100%;
@@ -342,13 +348,11 @@ html {
       margin-bottom: 56px;
       .serbicegrid {
         width: 560px;
-        height: 100%;
         display: flex;
         flex-direction: row;
         margin: 0px auto;
         .serbicegridimgbox {
           width: 55px;
-          height: 100%;
           .serbicegridimg {
             width: 50px;
             height: 50px;
@@ -357,7 +361,6 @@ html {
           }
         }
         .serbicegridtext {
-          height: 110px;
           margin-left: 20px;
           a {
             font-size: 1.5rem;
@@ -410,10 +413,10 @@ html {
       margin-bottom: 40px;
       .about_usgrid {
         width: 354px;
-        height: 333px;
+        height: 100%;
         margin: 0px 28px;
         .about_usgridtext {
-          width: 354px;
+          width: 100%;
           padding: 32px;
           box-sizing: border-box;
           background-color: rgba(20, 20, 20, .035);
@@ -448,38 +451,40 @@ html {
 
 .cooperation {
   width: 100%;
-  height: 160px;
-  padding-top: 24px;
+  height: 100%;
+  padding: 24px 0;
   box-sizing: border-box;
   border: 1px solid rgba(20, 20, 20, .2);
   .cooperationbox {
-    width: 80%;
+    margin: 0 auto;
+    width: 70%;
     height: 100%;
-    margin: 0px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
     box-sizing: border-box;
-    .cooperationlogo {
-      width: 220px;
-      height: 72px;
-      background-size: cover;
-    }
-    .cooperationlogo1 {
-      background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/3.png');
-    }
-    .cooperationlogo2 {
-      background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/5.png');
-    }
-    .cooperationlogo3 {
-      background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/4.png');
-    }
-    .cooperationlogo4 {
-      background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/1.png');
-    }
-    .cooperationlogo5 {
-      background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/7.png');
+    .cooperationgrid {
+      display: flex;
+      flex-direction: row;
+      .cooperationlogo {
+        width: 20%;
+        height: 72px;
+        background-size: cover;
+      }
+      .cooperationlogo1 {
+        background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/3.png');
+      }
+      .cooperationlogo2 {
+        background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/5.png');
+      }
+      .cooperationlogo3 {
+        background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/4.png');
+      }
+      .cooperationlogo4 {
+        background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/1.png');
+      }
+      .cooperationlogo5 {
+        background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/7.png');
+      }
     }
   }
 }
@@ -516,13 +521,13 @@ html {
       display: flex;
       flex-direction: row;
       margin: 0px auto;
-      justify-content: space-between;
       padding-bottom: 40px;
       .teamgrid {
         widows: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
+        margin: 0px auto;
         .teamimg {
           width: 250px;
           height: 60%;
@@ -536,6 +541,21 @@ html {
           background-color: white;
           box-sizing: border-box;
           padding: 24px;
+          h3 {
+            font-size: .95rem;
+            margin: 4px 0px;
+          }
+          .title {
+            margin-bottom: 20px;
+            font-size: .75rem;
+            color: $green;
+          }
+          p {
+            font-size: .85rem;
+            color: rgba(20, 20, 20, .6);
+            line-height: 2.0rem;
+            font-weight: 500;
+          }
         }
         .teamimg1 {
           background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2015/06/team-_0003_brazil-1368806_1280.png');
@@ -554,40 +574,47 @@ html {
   }
 }
 
+.teamleftgrid,
+.teamrightgrid {
+  display: flex;
+  margin: 0px auto;
+  width: 50%;
+}
+
 .other {
   width: 100%;
   height: 100%;
   background-color: white;
   padding: 20px 0 80px 0;
   .otherbox {
-    width: 70%;
-    height: 100%;
-    margin: 0px auto;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     .other-left {
+      width: 70%;
       height: 100%;
       display: flex;
       flex-direction: column;
       .other-leftblock {
-        widows: 100%;
         height: 50%;
         display: flex;
         flex-direction: row;
         .other-left-grid {
           width: 50%;
-          height: 541px;
+          height: 100%;
           border: 1px solid rgba(20, 20, 20, .2);
           margin: 16px;
           .other-left-grid-img {
-            width: 380px;
+            width: 100%;
             height: 256px;
             background-size: cover;
           }
           .other-left-grid-text {
+            min-height: 345px;
             padding: 20px;
-            width: 380px;
-            height: 285px;
+            width: 100%;
+            height: 50%;
             box-sizing: border-box;
             h3 {
               font-size: 1.2rem;
@@ -600,20 +627,23 @@ html {
             p {
               font-size: .8rem;
               line-height: 2em;
-              margin-bottom: 20px;
               color: rgba(20, 20, 20, .7);
             }
             button {
               box-sizing: border-box;
+              position: absolute;
+              bottom: 30px;
               width: 180px;
               padding: 16px;
               height: 45px;
+              margin-top: 20px;
               color: white;
               background-color: $green;
               border: none;
               border-radius: 4px;
               &:hover {
                 opacity: 0.6;
+                cursor: pointer;
               }
               -webkit-transition: opacity .3s;
               transition: opacity .3s;
@@ -621,6 +651,7 @@ html {
                 outline: none;
               }
             }
+            vertical-align: bottom;
           }
         }
         .other-left-grid-img1 {
@@ -638,9 +669,10 @@ html {
       }
     }
     .other-right {
-      width: 288px;
+      width: 30%;
       height: 100%;
       .other-right-text-grid {
+        width: 288px;
         border: 1px solid rgba(20, 20, 20, .4);
         margin: 20px 0px;
         padding: 4px 8px;
@@ -655,6 +687,7 @@ html {
         }
         .fa {
           margin: 4px;
+          cursor: pointer;
         }
       }
       .other-right-api-grid {
@@ -666,6 +699,7 @@ html {
           .fa {
             font-size: 2rem;
             margin: 0px 8px;
+            cursor: pointer;
           }
         }
       }
@@ -678,11 +712,11 @@ html {
           flex-direction: row;
           margin-bottom: 20px;
           .iconimgbox {
-            width: 20%;
             height: 100%;
             .iconimg {
               width: 50px;
               height: 50px;
+              margin-right: 12px;
               background-size: cover;
               background-position: center center;
               background-image: url('http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2017/04/post-4.jpg');
@@ -690,8 +724,16 @@ html {
           }
           .icontext {
             width: 60%;
-            h4 {}
-            p {}
+            h4 {
+              font-size: .8rem;
+              color: $green;
+              font-weight: 400;
+              margin-bottom: 8px;
+            }
+            p {
+              color: rgba(20, 20, 20, .6);
+              font-size: .8rem;
+            }
           }
         }
       }
@@ -701,16 +743,184 @@ html {
 
 .footer {
   width: 100%;
-  height: 1200px;
+  height: 100%;
+  background-color: #18253c;
+  padding: 40px 0px 12px 0px;
   .footerbox {
     width: 80%;
     height: 100%;
     margin: 0px auto;
-    .footergrid {}
-    .statement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .fg2 {
+      margin: 0px 16px;
+    }
+    .footergrid {
+      width: 354px;
+      h1 {
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
       h2 {
-        text-align: center;
+        color: white;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+      h3 {
+        font-size: .8rem;
+        color: $green;
+        font-weight: 400;
+        cursor: pointer;
+      }
+      p {
+        font-size: .8rem;
+        color: white;
+        line-height: 2rem;
+        margin-bottom: 20px;
+      }
+      .fgbox {
+        width: 250px;
+        height: 250px;
+        border: 1px solid white;
+        margin-bottom: 20px;
+      }
+    }
+    .fgi {
+      width: 60%;
+      h4 {
+        width: 100px;
+        font-size: .9rem;
+        color: $green;
+        font-weight: 400;
+      }
+      p {
+        color: white;
+        font-size: .8rem;
       }
     }
   }
+  .statement {
+    border-top: 1px solid white;
+    height: 48px;
+    text-align: center;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    h2 {
+      font-size: .9rem;
+      font-weight: 400;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width:1280px) {
+  //1280 RWD
+  .features {
+    //特色
+    .featuresbox {
+      .featurestext {}
+      .featuresblock {
+        width: 100%;
+      }
+    }
+  }
+  .product {
+    //產品
+    .productbox {
+      width: 100%;
+      .productblock {
+        .gridbox {
+          .imggrid {}
+        }
+      }
+    }
+  }
+  .service {
+    //服務項目
+    .serviceblock {
+      width: 95%;
+    }
+  }
+  .about_us {
+    //關於我們
+    .about_usbox {}
+    .about_usblock {
+      width: 100%;
+      .about_usbox {
+        .about_usgrid {}
+      }
+    }
+  }
+  .team {
+    //團隊介紹
+    .teamblock {
+      .teambox {
+        flex-direction: column;
+        margin: auto;
+        width: 70%;
+        height: 100%;
+        .teamgrid {
+          width: 300px;
+          height: 525px;
+          .teamimg {
+            width: 300px;
+            height: 60%;
+          }
+          .teamtext {
+            width: 300px;
+            height: 40%;
+          }
+        }
+      }
+    }
+  }
+  .teamleftgrid,
+  .teamrightgrid {
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .other {
+    .otherbox {
+      width: 75%;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      .other-left {
+        width: 100%;
+        .other-leftblock {
+          height: 100%;
+          .other-left-grid {
+            margin: 0px;
+          }
+        }
+      }
+      .other-right {
+        width: 100%;
+        .other-right-text-grid {
+          box-sizing: border-box;
+          width: 100%;
+          .ortgt {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  .footerbox {}
+}
+
+@media screen and (max-width:800px) {
+  //800 RWD
+}
+
+@media screen and (max-width:600px) {
+  //600 RWD
 }
