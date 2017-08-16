@@ -310,10 +310,14 @@ html {
             background-size: cover;
             cursor: pointer;
             transition: all 0.6s;
+            user-select: none;
             &:hover {
               opacity: .7;
               cursor: pointer;
               transform: scale(1.2);
+            }
+            &:focus {
+              outline: none;
             }
           }
         }
@@ -950,6 +954,8 @@ html {
     .nav {
       //選單
       .navbox {
+        width: 95%;
+        padding: 0px;
         .nav-leftgrid {
           height: 25%;
           position: absolute;
@@ -963,6 +969,7 @@ html {
             display: block;
             position: absolute;
             top: 25%;
+            right: 10%;
           }
         }
       }
@@ -1274,18 +1281,20 @@ html {
   .cooperation {
     width: 100%;
     height: 300px;
-    .cooperationbox {}
-    .cooperationlogo1,
-    .cooperationlogo2,
-    .cooperationlogo3,
-    .cooperationlogo4 {
-      float: left;
-      width: 50%;
-    }
-    .cooperationlogo5 {
-      float: left;
-      width: 100%;
-      margin-bottom: 16px;
+    .cooperationbox {
+      .cooperationlogo1,
+      .cooperationlogo2,
+      .cooperationlogo3,
+      .cooperationlogo4 {
+        float: left;
+        width: 50%;
+        margin-bottom: 16px;
+      }
+      .cooperationlogo5 {
+        float: left;
+        width: 100%;
+        margin-bottom: 16px;
+      }
     }
   }
   .team {
@@ -1364,6 +1373,11 @@ html {
         p {
           font-size: 1.2rem;
         }
+      }
+    }
+    .statement {
+      h2 {
+        font-size: .5rem;
       }
     }
   }

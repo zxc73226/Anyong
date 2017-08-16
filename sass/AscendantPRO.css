@@ -251,11 +251,14 @@ html {
             border: 1px solid white;
             background-size: cover;
             cursor: pointer;
-            transition: all 0.6s; }
+            transition: all 0.6s;
+            user-select: none; }
             .product .productbox .productblock .gridbox .imgbox .imggrid:hover {
               opacity: .7;
               cursor: pointer;
               transform: scale(1.2); }
+            .product .productbox .productblock .gridbox .imgbox .imggrid:focus {
+              outline: none; }
       .product .productbox .productblock .imggrid1 {
         background-image: url("http://demos.cpothemes.com/ascendant/wp-content/uploads/sites/38/2012/04/portfolio-_0006_desktop-1149231_1280.png"); }
       .product .productbox .productblock .imggrid2 {
@@ -725,16 +728,20 @@ html {
         .other .otherbox .other-right .other-right-text-grid .ortgt {
           width: 100%; } }
 @media screen and (max-width: 800px) {
-  .bbox .nav .navbox .nav-leftgrid {
-    height: 25%;
-    position: absolute;
-    top: 25%; }
-  .bbox .nav .navbox .nav-rightgrid li {
-    display: none; }
-  .bbox .nav .navbox .nav-rightgrid #Hamburgerslistbox {
-    display: block;
-    position: absolute;
-    top: 25%; }
+  .bbox .nav .navbox {
+    width: 95%;
+    padding: 0px; }
+    .bbox .nav .navbox .nav-leftgrid {
+      height: 25%;
+      position: absolute;
+      top: 25%; }
+    .bbox .nav .navbox .nav-rightgrid li {
+      display: none; }
+    .bbox .nav .navbox .nav-rightgrid #Hamburgerslistbox {
+      display: block;
+      position: absolute;
+      top: 25%;
+      right: 10%; }
 
   .features .featuresbox .featuresblock {
     flex-direction: column; }
@@ -924,13 +931,14 @@ html {
   .cooperation {
     width: 100%;
     height: 300px; }
-    .cooperation .cooperationlogo1,
-    .cooperation .cooperationlogo2,
-    .cooperation .cooperationlogo3,
-    .cooperation .cooperationlogo4 {
+    .cooperation .cooperationbox .cooperationlogo1,
+    .cooperation .cooperationbox .cooperationlogo2,
+    .cooperation .cooperationbox .cooperationlogo3,
+    .cooperation .cooperationbox .cooperationlogo4 {
       float: left;
-      width: 50%; }
-    .cooperation .cooperationlogo5 {
+      width: 50%;
+      margin-bottom: 16px; }
+    .cooperation .cooperationbox .cooperationlogo5 {
       float: left;
       width: 100%;
       margin-bottom: 16px; }
@@ -987,6 +995,8 @@ html {
     .footer .footerbox .footergrid {
       width: 100%; }
       .footer .footerbox .footergrid p {
-        font-size: 1.2rem; } }
+        font-size: 1.2rem; }
+  .footer .statement h2 {
+    font-size: .5rem; } }
 
 /*# sourceMappingURL=AscendantPRO.css.map */
